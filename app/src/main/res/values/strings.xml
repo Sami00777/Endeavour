@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Endeavour</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Price: $40</string>
+    <string name="fav_icon">fav_icon</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="arrow_forward">arrow_forward</string>
+    <string name="item_image">item_image</string>
+    <string name="exit">EXIT</string>
+    <string name="dialog_exit_message">Are you sure you want to exit the application?</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="yes_button">Yes</string>
+    <string name="loading_message">Loading..!!!</string>
+    <string name="warning_title">WARNING!!!</string>
+    <string name="dialog_warning_message">Are you sure you want to remove product from the favourites list?</string>
+    <string name="no_item_added">No Item Added</string>
+    <string name="sample_item_name">Diamond Label Shiraz</string>
+    <string name="favourite">Favourite</string>
+    <string name="delete">Delete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

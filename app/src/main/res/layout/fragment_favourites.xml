@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FavouritesFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/my_toolbar_saved"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:alpha="1"
+            app:subtitle="Favourites List"
+            app:subtitleTextColor="@color/my_glossy_blue"
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textNoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_item_added"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_rec_view"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

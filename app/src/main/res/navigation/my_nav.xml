@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainListFragment">
+
+    <fragment
+        android:id="@+id/mainListFragment"
+        android:name="com.xanroid.endeavour.fragments.MainListFragment"
+        android:label="fragment_main_list"
+        tools:layout="@layout/fragment_main_list" >
+        <action
+            android:id="@+id/action_mainListFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.xanroid.endeavour.fragments.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" >
+        <action
+            android:id="@+id/action_favouritesFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.xanroid.endeavour.fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_mainListFragment"
+            app:destination="@id/mainListFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
